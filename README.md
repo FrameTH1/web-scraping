@@ -4,3 +4,5 @@
 
 > [!TIP]
 > อย่าลืมกดติดตาม [Sukit Promputta](https://www.youtube.com/channel/UCIMQ8_REAoEDhLB4jna-UGg) หรือกด :star: ให้ Repository เพื่อให้กำลังใจคนทำหรือเพื่อติดตามโค้ดใหม่ๆ
+
+![รูปประกอบ](https://github.com/FrameTH1/web-scraping/blob/main/img/img-cover.png)

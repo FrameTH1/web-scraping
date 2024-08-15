@@ -27,4 +27,4 @@ jobs:
       - name: execute py script # run main.py
         env:
           SOME_SECRET: ${{ secrets.SOME_SECRET }}
-        run: python "ราคาทอง Ep.1/Main.py"
+        run: python "Ep1/Main.py"

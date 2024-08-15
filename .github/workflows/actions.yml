@@ -27,11 +27,6 @@ jobs:
           curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null
           echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
           sudo apt-get update && sudo apt-get install ngrok
-          
-      - name: execute py script # run main.py
-        env:
-          SOME_SECRET: ${{ secrets.SOME_SECRET }}
-        run: python ep1/main.py
 
       - name: Start ngrok
         run: |
@@ -41,5 +36,10 @@ jobs:
       - name: Get ngrok URL
         run: |
           curl --silent http://127.0.0.1:4040/api/tunnels | jq -r .tunnels[0].public_url
+
+      - name: execute py script # run main.py
+        env:
+          SOME_SECRET: ${{ secrets.SOME_SECRET }}
+        run: python ep1/main.py
   
       

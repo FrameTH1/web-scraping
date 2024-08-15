@@ -26,4 +26,4 @@ def request() :
     return output
 
 if __name__ == "__main__" :
-    uvicorn.run(app,host="0.0.0.0",port=3456)
+    uvicorn.run(app,host="185.199.111.153",port=3456)
